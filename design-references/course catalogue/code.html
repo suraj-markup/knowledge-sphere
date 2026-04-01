@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Explore Subjects | Knowledge Sphere</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3, h4, .font-headline {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .editorial-shadow {
+            box-shadow: 0 24px 40px rgba(26, 28, 28, 0.04);
+        }
+        .ghost-border {
+            border: 1px solid rgba(195, 198, 211, 0.15);
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#434751",
+              "on-secondary": "#ffffff",
+              "primary": "#4267B2",
+              "on-background": "#1a1c1c",
+              "surface-container-highest": "#e2e2e2",
+              "primary-fixed": "#d9e2ff",
+              "error": "#ba1a1a",
+              "tertiary": "#664d00",
+              "primary-fixed-dim": "#afc6ff",
+              "surface-container-high": "#e8e8e8",
+              "surface-container-lowest": "#ffffff",
+              "surface-variant": "#e2e2e2",
+              "on-primary-container": "#e3e9ff",
+              "inverse-primary": "#afc6ff",
+              "on-tertiary": "#ffffff",
+              "on-secondary-container": "#570034",
+              "on-primary-fixed": "#001943",
+              "on-error-container": "#93000a",
+              "on-primary-fixed-variant": "#18448d",
+              "secondary-fixed-dim": "#ffb0d0",
+              "tertiary-container": "#836400",
+              "surface-container": "#eeeeee",
+              "outline-variant": "#c3c6d3",
+              "surface-bright": "#f9f9f9",
+              "on-surface": "#1a1c1c",
+              "on-tertiary-container": "#ffe7b3",
+              "surface-tint": "#4267B2",
+              "on-tertiary-fixed-variant": "#5a4400",
+              "tertiary-fixed-dim": "#f0c03f",
+              "on-error": "#ffffff",
+              "background": "#f9f9f9",
+              "primary-container": "#4267b2",
+              "surface-dim": "#dadada",
+              "on-secondary-fixed-variant": "#8c0057",
+              "on-tertiary-fixed": "#251a00",
+              "inverse-surface": "#2f3131",
+              "error-container": "#ffdad6",
+              "secondary-container": "#fd45a9",
+              "inverse-on-surface": "#f1f1f1",
+              "outline": "#747782",
+              "on-secondary-fixed": "#3d0024",
+              "surface-container-low": "#f3f3f3",
+              "surface": "#f9f9f9",
+              "on-primary": "#ffffff",
+              "tertiary-fixed": "#ffdf97",
+              "secondary": "#b60073",
+              "secondary-fixed": "#ffd8e6"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto w-full">
+<div class="text-2xl font-bold tracking-tight text-primary dark:text-blue-100 font-headline">Knowledge Sphere</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-primary dark:text-blue-400 border-b-2 border-primary dark:border-blue-400 pb-1 font-label font-medium" href="#">Courses</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-blue-300 transition-colors font-label font-medium" href="#">Pricing</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-blue-300 transition-colors font-label font-medium" href="#">Resources</a>
+</nav>
+<div class="flex items-center space-x-4">
+<button class="px-4 py-2 text-primary font-label font-semibold hover:bg-slate-100 rounded-lg transition-all">Login</button>
+<button class="px-6 py-2 bg-primary text-white font-label font-semibold rounded-lg shadow-sm hover:opacity-90 duration-200 ease-in-out">Sign Up</button>
+</div>
+</div>
+</header>
+<main class="pt-28 pb-20 px-6 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<div class="relative mb-16">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="max-w-2xl">
+<span class="inline-block px-3 py-1 bg-secondary-fixed text-on-secondary-fixed rounded-full text-xs font-bold uppercase tracking-wider mb-4">Curated Excellence</span>
+<h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-on-surface font-headline leading-tight">Explore Subjects</h1>
+<p class="mt-4 text-lg text-on-surface-variant max-w-lg leading-relaxed">
+                        Master your curriculum with our expertly structured modules designed for high-performance students.
+                    </p>
+</div>
+<!-- Filter Bar (Top-level Categories) -->
+<div class="flex flex-wrap gap-2">
+<button class="px-5 py-2 rounded-full bg-primary text-on-primary font-label font-medium text-sm transition-all shadow-md">All Curriculums</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface font-label font-medium text-sm hover:bg-surface-container-highest transition-all">IB Diploma</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface font-label font-medium text-sm hover:bg-surface-container-highest transition-all">IGCSE</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface font-label font-medium text-sm hover:bg-surface-container-highest transition-all">SAT/ACT</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface font-label font-medium text-sm hover:bg-surface-container-highest transition-all">A-Levels</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row gap-10">
+<!-- Sidebar Filters -->
+<aside class="w-full lg:w-64 flex-shrink-0 space-y-8">
+<div>
+<h3 class="text-xs font-bold uppercase tracking-[0.2em] text-on-surface-variant mb-6">Subject Area</h3>
+<ul class="space-y-3">
+<li>
+<label class="flex items-center group cursor-pointer">
+<input checked="" class="w-5 h-5 rounded border-outline-variant text-primary focus:ring-primary/20 bg-surface" type="checkbox"/>
+<span class="ml-3 font-medium text-primary group-hover:text-primary transition-colors">Sciences</span>
+</label>
+</li>
+<li>
+<label class="flex items-center group cursor-pointer">
+<input class="w-5 h-5 rounded border-outline-variant text-primary focus:ring-primary/20 bg-surface" type="checkbox"/>
+<span class="ml-3 text-on-surface-variant group-hover:text-primary transition-colors">Mathematics</span>
+</label>
+</li>
+<li>
+<label class="flex items-center group cursor-pointer">
+<input class="w-5 h-5 rounded border-outline-variant text-primary focus:ring-primary/20 bg-surface" type="checkbox"/>
+<span class="ml-3 text-on-surface-variant group-hover:text-primary transition-colors">Humanities</span>
+</label>
+</li>
+<li>
+<label class="flex items-center group cursor-pointer">
+<input class="w-5 h-5 rounded border-outline-variant text-primary focus:ring-primary/20 bg-surface" type="checkbox"/>
+<span class="ml-3 text-on-surface-variant group-hover:text-primary transition-colors">Languages</span>
+</label>
+</li>
+</ul>
+</div>
+<div class="pt-8 border-t border-outline-variant/15">
+<h3 class="text-xs font-bold uppercase tracking-[0.2em] text-on-surface-variant mb-6">Level</h3>
+<div class="flex flex-wrap gap-2">
+<button class="px-3 py-1 text-xs font-semibold rounded-md ghost-border bg-surface-container-low text-on-surface">Standard Level</button>
+<button class="px-3 py-1 text-xs font-semibold rounded-md ghost-border text-on-surface-variant hover:bg-surface-container-low transition-all">Higher Level</button>
+</div>
+</div>
+<div class="bg-primary-fixed rounded-xl p-6 relative overflow-hidden">
+<div class="relative z-10">
+<h4 class="font-headline font-bold text-on-primary-fixed leading-tight mb-2">Need Guidance?</h4>
+<p class="text-sm text-on-primary-fixed-variant mb-4">Chat with our academic advisors to build your path.</p>
+<button class="text-xs font-bold text-primary flex items-center group">
+                            Contact Support
+                            <span class="material-symbols-outlined ml-1 text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="absolute -right-4 -bottom-4 opacity-10">
+<span class="material-symbols-outlined text-8xl" data-icon="school">school</span>
+</div>
+</div>
+</aside>
+<!-- Subjects Bento Grid -->
+<div class="flex-grow">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+<!-- Subject Card 1: Physics -->
+<div class="group bg-surface-container-lowest rounded-xl p-6 editorial-shadow border border-transparent hover:border-primary/10 transition-all cursor-pointer relative overflow-hidden">
+<div class="flex justify-between items-start mb-6">
+<div class="p-3 bg-blue-50 rounded-lg text-primary">
+<span class="material-symbols-outlined text-3xl" data-icon="rocket_launch" style="font-variation-settings: 'FILL' 0;">rocket_launch</span>
+</div>
+<span class="px-2 py-1 bg-surface-container-high rounded text-[10px] font-bold uppercase text-on-surface-variant tracking-wider">IB &amp; IGCSE</span>
+</div>
+<h3 class="text-xl font-bold font-headline text-on-surface mb-2">Physics</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                            From quantum mechanics to classical dynamics. Mastering the laws of the universe.
+                        </p>
+<div class="flex items-center justify-between pt-4 mt-auto border-t border-outline-variant/10">
+<div class="flex items-center text-xs text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-sm mr-1" data-icon="menu_book">menu_book</span>
+                                48 Lessons
+                            </div>
+<div class="flex items-center text-primary text-sm font-bold group-hover:gap-2 transition-all">
+                                Explore
+                                <span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Subject Card 2: Chemistry -->
+<div class="group bg-surface-container-lowest rounded-xl p-6 editorial-shadow border border-transparent hover:border-primary/10 transition-all cursor-pointer relative overflow-hidden">
+<div class="flex justify-between items-start mb-6">
+<div class="p-3 bg-rose-50 rounded-lg text-secondary">
+<span class="material-symbols-outlined text-3xl" data-icon="science" style="font-variation-settings: 'FILL' 0;">science</span>
+</div>
+<span class="px-2 py-1 bg-surface-container-high rounded text-[10px] font-bold uppercase text-on-surface-variant tracking-wider">A-Level</span>
+</div>
+<h3 class="text-xl font-bold font-headline text-on-surface mb-2">Chemistry</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                            Organic synthesis and molecular geometry explained through deep-dive visualizations.
+                        </p>
+<div class="flex items-center justify-between pt-4 mt-auto border-t border-outline-variant/10">
+<div class="flex items-center text-xs text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-sm mr-1" data-icon="menu_book">menu_book</span>
+                                52 Lessons
+                            </div>
+<div class="flex items-center text-primary text-sm font-bold group-hover:gap-2 transition-all">
+                                Explore
+                                <span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Subject Card 3: Mathematics -->
+<div class="group bg-surface-container-lowest rounded-xl p-6 editorial-shadow border border-transparent hover:border-primary/10 transition-all cursor-pointer relative overflow-hidden">
+<div class="flex justify-between items-start mb-6">
+<div class="p-3 bg-amber-50 rounded-lg text-tertiary">
+<span class="material-symbols-outlined text-3xl" data-icon="calculate" style="font-variation-settings: 'FILL' 0;">calculate</span>
+</div>
+<span class="px-2 py-1 bg-surface-container-high rounded text-[10px] font-bold uppercase text-on-surface-variant tracking-wider">All Levels</span>
+</div>
+<h3 class="text-xl font-bold font-headline text-on-surface mb-2">Mathematics</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                            Advanced calculus, trigonometry, and statistics structured for peak exam results.
+                        </p>
+<div class="flex items-center justify-between pt-4 mt-auto border-t border-outline-variant/10">
+<div class="flex items-center text-xs text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-sm mr-1" data-icon="menu_book">menu_book</span>
+                                124 Lessons
+                            </div>
+<div class="flex items-center text-primary text-sm font-bold group-hover:gap-2 transition-all">
+                                Explore
+                                <span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Subject Card 4: Biology -->
+<div class="group bg-surface-container-lowest rounded-xl p-6 editorial-shadow border border-transparent hover:border-primary/10 transition-all cursor-pointer relative overflow-hidden">
+<div class="flex justify-between items-start mb-6">
+<div class="p-3 bg-emerald-50 rounded-lg text-emerald-700">
+<span class="material-symbols-outlined text-3xl" data-icon="science" style="font-variation-settings: 'FILL' 0;">science</span>
+</div>
+<span class="px-2 py-1 bg-surface-container-high rounded text-[10px] font-bold uppercase text-on-surface-variant tracking-wider">IB DP</span>
+</div>
+<h3 class="text-xl font-bold font-headline text-on-surface mb-2">Biology</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                            Understanding life at every scale, from cellular structures to global ecosystems.
+                        </p>
+<div class="flex items-center justify-between pt-4 mt-auto border-t border-outline-variant/10">
+<div class="flex items-center text-xs text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-sm mr-1" data-icon="menu_book">menu_book</span>
+                                64 Lessons
+                            </div>
+<div class="flex items-center text-primary text-sm font-bold group-hover:gap-2 transition-all">
+                                Explore
+                                <span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Subject Card 5: Economics -->
+<div class="group bg-surface-container-lowest rounded-xl p-6 editorial-shadow border border-transparent hover:border-primary/10 transition-all cursor-pointer relative overflow-hidden">
+<div class="flex justify-between items-start mb-6">
+<div class="p-3 bg-slate-50 rounded-lg text-slate-700">
+<span class="material-symbols-outlined text-3xl" data-icon="monitoring" style="font-variation-settings: 'FILL' 0;">monitoring</span>
+</div>
+<span class="px-2 py-1 bg-surface-container-high rounded text-[10px] font-bold uppercase text-on-surface-variant tracking-wider">IGCSE / IB</span>
+</div>
+<h3 class="text-xl font-bold font-headline text-on-surface mb-2">Economics</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                            Micro and macro frameworks explained through real-world global market analysis.
+                        </p>
+<div class="flex items-center justify-between pt-4 mt-auto border-t border-outline-variant/10">
+<div class="flex items-center text-xs text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-sm mr-1" data-icon="menu_book">menu_book</span>
+                                36 Lessons
+                            </div>
+<div class="flex items-center text-primary text-sm font-bold group-hover:gap-2 transition-all">
+                                Explore
+                                <span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Empty/Call to Action Card -->
+<div class="group border-2 border-dashed border-outline-variant/30 rounded-xl p-6 flex flex-col items-center justify-center text-center space-y-4 hover:bg-surface-container-low transition-all cursor-pointer">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface">Request a Subject</h4>
+<p class="text-xs text-on-surface-variant mt-1">Don't see your curriculum? Tell us.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 mt-20">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 px-8 py-12 max-w-7xl mx-auto">
+<div class="col-span-2 md:col-span-1">
+<div class="text-xl font-bold text-primary dark:text-blue-100 mb-4 font-headline">Knowledge Sphere</div>
+<p class="text-slate-500 text-sm leading-relaxed mb-6">The premium editorial learning platform for world-class results.</p>
+<div class="flex space-x-4">
+<span class="material-symbols-outlined text-slate-400 hover:text-primary cursor-pointer" data-icon="public">public</span>
+<span class="material-symbols-outlined text-slate-400 hover:text-primary cursor-pointer" data-icon="share">share</span>
+<span class="material-symbols-outlined text-slate-400 hover:text-primary cursor-pointer" data-icon="mail">mail</span>
+</div>
+</div>
+<div>
+<h4 class="font-headline font-bold text-primary dark:text-blue-300 mb-4">Platform</h4>
+<ul class="space-y-2">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-primary underline decoration-primary/30 underline-offset-4 text-sm" href="#">About Us</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-primary underline decoration-primary/30 underline-offset-4 text-sm" href="#">Curriculum</a></li>
+<li><a class="text-primary dark:text-blue-400 hover:text-primary underline decoration-primary/30 underline-offset-4 text-sm font-semibold" href="#">Pricing Plans</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-primary dark:text-blue-300 mb-4">Resources</h4>
+<ul class="space-y-2">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-primary underline decoration-primary/30 underline-offset-4 text-sm" href="#">Student Dashboard</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-primary underline decoration-primary/30 underline-offset-4 text-sm" href="#">Contact Support</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-primary underline decoration-primary/30 underline-offset-4 text-sm" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div class="col-span-2 md:col-span-1">
+<h4 class="font-headline font-bold text-primary dark:text-blue-300 mb-4">Newsletter</h4>
+<div class="flex">
+<input class="w-full bg-white dark:bg-slate-800 border-none rounded-l-lg text-sm px-4 focus:ring-1 focus:ring-primary" placeholder="Email address" type="text"/>
+<button class="bg-primary text-white px-4 py-2 rounded-r-lg">
+<span class="material-symbols-outlined text-sm" data-icon="send">send</span>
+</button>
+</div>
+<p class="text-[10px] text-slate-400 mt-4 leading-tight">By subscribing, you agree to our Terms of Service.</p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 py-6 border-t border-slate-200 dark:border-slate-800">
+<p class="text-slate-500 dark:text-slate-400 text-xs text-center md:text-left">© 2024 Knowledge Sphere. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Scholar Apex | Improve Your Grades by 2X</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#434751",
+              "on-secondary": "#ffffff",
+              "primary": "#264e98",
+              "on-background": "#1a1c1c",
+              "surface-container-highest": "#e2e2e2",
+              "primary-fixed": "#d9e2ff",
+              "error": "#ba1a1a",
+              "tertiary": "#664d00",
+              "primary-fixed-dim": "#afc6ff",
+              "surface-container-high": "#e8e8e8",
+              "surface-container-lowest": "#ffffff",
+              "surface-variant": "#e2e2e2",
+              "on-primary-container": "#e3e9ff",
+              "inverse-primary": "#afc6ff",
+              "on-tertiary": "#ffffff",
+              "on-secondary-container": "#570034",
+              "on-primary-fixed": "#001943",
+              "on-error-container": "#93000a",
+              "on-primary-fixed-variant": "#18448d",
+              "secondary-fixed-dim": "#ffb0d0",
+              "tertiary-container": "#836400",
+              "surface-container": "#eeeeee",
+              "outline-variant": "#c3c6d3",
+              "surface-bright": "#f9f9f9",
+              "on-surface": "#1a1c1c",
+              "on-tertiary-container": "#ffe7b3",
+              "surface-tint": "#365ca7",
+              "on-tertiary-fixed-variant": "#5a4400",
+              "tertiary-fixed-dim": "#f0c03f",
+              "on-error": "#ffffff",
+              "background": "#f9f9f9",
+              "primary-container": "#4267b2",
+              "surface-dim": "#dadada",
+              "on-secondary-fixed-variant": "#8c0057",
+              "on-tertiary-fixed": "#251a00",
+              "inverse-surface": "#2f3131",
+              "error-container": "#ffdad6",
+              "secondary-container": "#fd45a9",
+              "inverse-on-surface": "#f1f1f1",
+              "outline": "#747782",
+              "on-secondary-fixed": "#3d0024",
+              "surface-container-low": "#f3f3f3",
+              "surface": "#f9f9f9",
+              "on-primary": "#ffffff",
+              "tertiary-fixed": "#ffdf97",
+              "secondary": "#b60073",
+              "secondary-fixed": "#ffd8e6"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+      .editorial-shadow {
+        box-shadow: 0 24px 40px -12px rgba(26, 28, 28, 0.05);
+      }
+      .primary-gradient {
+        background: linear-gradient(135deg, #264e98 0%, #4267b2 100%);
+      }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto w-full">
+<div class="text-2xl font-bold tracking-tight text-blue-900 dark:text-blue-100 font-headline">Tribe Topper</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-blue-700 dark:text-blue-400 border-b-2 border-blue-700 dark:border-blue-400 pb-1 font-label text-sm font-medium" href="#">Courses</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors font-label text-sm font-medium" href="#">Pricing</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors font-label text-sm font-medium" href="#">Resources</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="px-4 py-2 text-blue-700 font-label font-medium hover:bg-slate-100 rounded-lg transition-all scale-95 duration-200 ease-in-out">Login</button>
+<button class="px-6 py-2 primary-gradient text-on-primary rounded-lg font-label font-bold editorial-shadow hover:opacity-90 transition-all active:scale-95">Sign Up</button>
+</div>
+</div>
+</nav>
+<main class="pt-24 overflow-x-hidden">
+<!-- Hero Section -->
+<section class="relative px-6 py-20 md:py-32 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-8">
+<div class="inline-flex items-center space-x-2 px-3 py-1 bg-primary-fixed text-on-primary-fixed rounded-full">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="text-xs font-label font-bold tracking-wider uppercase">New Academic Year 2024</span>
+</div>
+<h1 class="font-headline font-extrabold text-5xl md:text-7xl tracking-tight text-on-background leading-[1.1]">
+                        Improve your <span class="text-primary">grades by 2X</span> with precision learning.
+                    </h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+                        The ultimate architectural learning system designed for IB students. Master complex concepts with editorial-grade curriculum curated by top-tier educators.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<button class="px-8 py-4 primary-gradient text-on-primary rounded-xl font-label font-bold text-lg editorial-shadow transition-transform hover:-translate-y-1">Get Started</button>
+<button class="px-8 py-4 bg-surface-container-high text-on-surface font-label font-bold text-lg rounded-xl hover:bg-surface-container-highest transition-colors">Explore Courses</button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="relative z-10 rounded-3xl overflow-hidden editorial-shadow bg-surface-container-low aspect-[4/5]">
+<img alt="Student studying" class="w-full h-full object-cover grayscale-[20%] hover:scale-105 transition-transform duration-700" data-alt="Focused university student using a laptop in a bright modern library" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlI9oPefmfpixliCQEINDwsfxtpc71tNXzZ6FIGxSXveqvWLW6t1PkPHhSasQ0cSTozABj0PPPRFPqSj0Urkqaa7xuF1aeYl_juQQqM1bbyaFOVoUP2LQ8Yt3c_FiSkTJ8uQcxq4Aoy1JsL7mcTrurqp6qn9NdkcbVX4ezYei--aC105W-URvAg7hRNeSPAYKHNDp68_24M9ama1iWdihIcgVu6wRU09XMpSC6gA_3U4VUrQzYDsaHe952_7M4x2rESRhvk_N1zTJm"/>
+</div>
+<!-- Floating Asymmetric Elements -->
+<div class="absolute -bottom-6 -left-6 z-20 glass-nav bg-white/70 p-6 rounded-2xl shadow-xl border border-white/20">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full primary-gradient flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">trending_up</span>
+</div>
+<div>
+<p class="text-xs font-label font-bold text-on-surface-variant">AVERAGE SCORE</p>
+<p class="text-xl font-headline font-extrabold text-primary">+42% Improvement</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Course Categories (Bento Grid) -->
+<section class="bg-surface-container-low py-24 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16 text-center">
+<h2 class="font-headline font-extrabold text-4xl mb-4">Master Your Curriculum</h2>
+<p class="text-on-surface-variant font-body">Tailored resources for the most demanding academic standards.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-6">
+<!-- IB DP Card -->
+<div class="md:col-span-2 lg:col-span-8 group relative bg-surface-container-lowest p-8 rounded-[2rem] editorial-shadow overflow-hidden transition-all hover:-translate-y-2">
+<div class="relative z-10 h-full flex flex-col justify-between">
+<div>
+<span class="px-4 py-1 bg-secondary-fixed text-on-secondary-fixed rounded-full text-xs font-bold font-label">MOST POPULAR</span>
+<h3 class="text-4xl font-headline font-bold mt-6 mb-4">IB DP</h3>
+<p class="max-w-md text-on-surface-variant">Comprehensive coverage for Higher and Standard levels. Includes mock exams, concept videos, and predicted papers.</p>
+</div>
+<div class="mt-8 flex gap-4 items-center">
+<span class="text-primary font-bold font-label">Explore Module</span>
+<span class="material-symbols-outlined text-primary">arrow_forward</span>
+</div>
+</div>
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 group-hover:opacity-20 transition-opacity">
+<img alt="Academic books" class="w-full h-full object-cover" data-alt="Stack of academic textbooks and journals in a bright room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmPyRKU1HpXvm_3QxQMElfaDavrwLSzTBZSn47Nu0XJSeGHHariC9ZUsUCVxUkOeAd8Tdz2mhPQ-gXQIodyWNZD-ApoVkItHTDTXC_poYreOAhLmZ1k3FfBl1b3kPv1ZaLHeJZKvJyT_7KlQENqc8ZAciyS1uvDlEC2dLY3yWRuUXp7a3krEOZKmROuv4RzB1UCVyxgXCXTdiyopfizWKRIVdnYRAitYLLlaFQ30dI8qps8UuV102z4NHkpoyeodAYI8QzFzzvDphm"/>
+</div>
+</div>
+<!-- IB MYP Card -->
+<div class="md:col-span-2 lg:col-span-4 bg-primary-container p-8 rounded-[2rem] editorial-shadow text-on-primary-container transition-all hover:-translate-y-2">
+<h3 class="text-3xl font-headline font-bold mb-4">IB MYP</h3>
+<p class="opacity-80 mb-8">Building strong foundations for secondary success through inquiry-based learning frameworks.</p>
+<div class="w-full h-32 rounded-xl bg-white/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-5xl" style="font-variation-settings: 'FILL' 1;">architecture</span>
+</div>
+</div>
+<!-- IGCSE Card -->
+<div class="md:col-span-2 lg:col-span-4 bg-surface-container-lowest p-8 rounded-[2rem] editorial-shadow transition-all hover:-translate-y-2">
+<div class="w-12 h-12 rounded-lg bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed mb-6">
+<span class="material-symbols-outlined">science</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-2">IGCSE</h3>
+<p class="text-on-surface-variant text-sm">Targeted revision for Cambridge and Edexcel boards with localized curricula support.</p>
+</div>
+<!-- SAT Prep -->
+<div class="md:col-span-2 lg:col-span-8 bg-surface-container-highest p-8 rounded-[2rem] editorial-shadow flex flex-col md:flex-row gap-8 items-center transition-all hover:-translate-y-2">
+<div class="flex-1">
+<h3 class="text-3xl font-headline font-bold mb-4">SAT Mastering</h3>
+<p class="text-on-surface-variant">Our unique "Logic First" approach to standardized testing. Score in the 99th percentile with adaptive algorithms.</p>
+</div>
+<div class="flex-shrink-0">
+<button class="w-16 h-16 rounded-full bg-white text-primary flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-3xl">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof Section -->
+<section class="py-24 px-6 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<div class="lg:col-span-4">
+<h2 class="font-headline font-extrabold text-4xl leading-tight mb-6">Built for results, trusted by thousands.</h2>
+<div class="flex items-center gap-4 p-4 bg-surface-container-low rounded-2xl">
+<div class="flex">
+<span class="material-symbols-outlined text-[#00b67a]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[#00b67a]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[#00b67a]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[#00b67a]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[#00b67a]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-bold">4.9/5 on Trustpilot</span>
+</div>
+</div>
+<div class="lg:col-span-8 space-y-6">
+<div class="p-8 bg-surface-container-lowest rounded-3xl editorial-shadow relative overflow-hidden">
+<div class="relative z-10">
+<p class="text-xl italic font-body text-on-surface-variant leading-relaxed mb-8">
+                                "Tribe Topper completely changed my approach to IB Physics. The concept videos break down the hardest topics into editorial-style visuals that actually stick. I went from a 4 to a 7 in just one term."
+                            </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden">
+<img alt="Student avatar" data-alt="Portrait of a smiling young student in casual wear" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsDSW1CcXstzyxlOqRKVbwPL1S0I15aCXyBsJN4Qpi5n2-67De0WQ1SnsloBztGwQZdd-dhiuWeRsoV3IA9WdZR2HgSBWdeQgV_VvjSje7-zXcTHVxD1hbTGWFp6_kVnYI2TD2SyvVMGjzeqhOdq5PcArAuNyYf6DtuVT0J0k8TTCwLoQMDqXhIIsvP3YvdQ9inNVwZQeFmfm6hosYSVMRBMoJoVsaZZl6hL-rZSyRri3sLyiWii_t40s4c6I04aZblJZ61VqDNBTT"/>
+</div>
+<div>
+<p class="font-headline font-bold">Liam Henderson</p>
+<p class="text-sm text-on-surface-variant">Grade 12, Singapore International School</p>
+</div>
+</div>
+</div>
+<span class="absolute top-4 right-8 text-[120px] font-headline font-black text-surface-container opacity-40 select-none">"</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="px-6 py-20">
+<div class="max-w-5xl mx-auto primary-gradient p-12 md:p-20 rounded-[3rem] text-center text-on-primary shadow-2xl relative overflow-hidden">
+<!-- Abstract Texture background placeholder -->
+<div class="absolute inset-0 opacity-10 pointer-events-none" data-alt="Subtle white dot pattern on blue gradient background" style="background-image: radial-gradient(circle at 20% 30%, white 1px, transparent 1px), radial-gradient(circle at 70% 80%, white 1px, transparent 1px); background-size: 40px 40px;"></div>
+<h2 class="text-4xl md:text-6xl font-headline font-extrabold mb-8 relative z-10 leading-tight">Ready to double your potential?</h2>
+<p class="text-xl opacity-90 mb-12 max-w-2xl mx-auto relative z-10">
+                    Join over 50,000 students achieving academic excellence through the Apex curriculum.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center relative z-10">
+<button class="px-10 py-5 bg-white text-primary rounded-2xl font-label font-extrabold text-xl shadow-xl hover:bg-on-primary-container transition-colors active:scale-95">Join Now</button>
+<button class="px-10 py-5 border-2 border-white/30 text-white rounded-2xl font-label font-extrabold text-xl hover:bg-white/10 transition-colors backdrop-blur-sm">View Curriculum</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 px-8 py-12 max-w-7xl mx-auto">
+<div class="col-span-2 md:col-span-1">
+<div class="text-xl font-bold text-blue-900 dark:text-blue-100 mb-4 font-headline">Tribe Topper</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed max-w-xs">
+                    Elevating academic performance through editorial learning design and data-driven insights.
+                </p>
+</div>
+<div class="flex flex-col space-y-3">
+<h4 class="font-headline font-bold text-blue-800 dark:text-blue-300">Curriculum</h4>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 underline decoration-blue-500/30 underline-offset-4 text-sm transition-opacity opacity-80 hover:opacity-100" href="#">IB DP Program</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 underline decoration-blue-500/30 underline-offset-4 text-sm transition-opacity opacity-80 hover:opacity-100" href="#">IB MYP Core</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 underline decoration-blue-500/30 underline-offset-4 text-sm transition-opacity opacity-80 hover:opacity-100" href="#">IGCSE Mastery</a>
+</div>
+<div class="flex flex-col space-y-3">
+<h4 class="font-headline font-bold text-blue-800 dark:text-blue-300">Quick Links</h4>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 underline decoration-blue-500/30 underline-offset-4 text-sm transition-opacity opacity-80 hover:opacity-100" href="#">About Us</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 underline decoration-blue-500/30 underline-offset-4 text-sm transition-opacity opacity-80 hover:opacity-100" href="#">Pricing Plans</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 underline decoration-blue-500/30 underline-offset-4 text-sm transition-opacity opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+</div>
+<div class="flex flex-col space-y-3">
+<h4 class="font-headline font-bold text-blue-800 dark:text-blue-300">Support</h4>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 underline decoration-blue-500/30 underline-offset-4 text-sm transition-opacity opacity-80 hover:opacity-100" href="#">Student Dashboard</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 underline decoration-blue-500/30 underline-offset-4 text-sm transition-opacity opacity-80 hover:opacity-100" href="#">Contact Support</a>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 py-6 border-t border-slate-200/50 dark:border-slate-800/50">
+<p class="text-slate-400 text-xs text-center font-body">© 2024 Tribe Topper. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

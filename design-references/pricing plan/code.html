@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Subscription Plans - Tribe Topper</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#434751",
+              "on-secondary": "#ffffff",
+              "primary": "#264e98",
+              "on-background": "#1a1c1c",
+              "surface-container-highest": "#e2e2e2",
+              "primary-fixed": "#d9e2ff",
+              "error": "#ba1a1a",
+              "tertiary": "#664d00",
+              "primary-fixed-dim": "#afc6ff",
+              "surface-container-high": "#e8e8e8",
+              "surface-container-lowest": "#ffffff",
+              "surface-variant": "#e2e2e2",
+              "on-primary-container": "#e3e9ff",
+              "inverse-primary": "#afc6ff",
+              "on-tertiary": "#ffffff",
+              "on-secondary-container": "#570034",
+              "on-primary-fixed": "#001943",
+              "on-error-container": "#93000a",
+              "on-primary-fixed-variant": "#18448d",
+              "secondary-fixed-dim": "#ffb0d0",
+              "tertiary-container": "#836400",
+              "surface-container": "#eeeeee",
+              "outline-variant": "#c3c6d3",
+              "surface-bright": "#f9f9f9",
+              "on-surface": "#1a1c1c",
+              "on-tertiary-container": "#ffe7b3",
+              "surface-tint": "#365ca7",
+              "on-tertiary-fixed-variant": "#5a4400",
+              "tertiary-fixed-dim": "#f0c03f",
+              "on-error": "#ffffff",
+              "background": "#f9f9f9",
+              "primary-container": "#4267b2",
+              "surface-dim": "#dadada",
+              "on-secondary-fixed-variant": "#8c0057",
+              "on-tertiary-fixed": "#251a00",
+              "inverse-surface": "#2f3131",
+              "error-container": "#ffdad6",
+              "secondary-container": "#fd45a9",
+              "inverse-on-surface": "#f1f1f1",
+              "outline": "#747782",
+              "on-secondary-fixed": "#3d0024",
+              "surface-container-low": "#f3f3f3",
+              "surface": "#f9f9f9",
+              "on-primary": "#ffffff",
+              "tertiary-fixed": "#ffdf97",
+              "secondary": "#b60073",
+              "secondary-fixed": "#ffd8e6"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto w-full">
+<div class="text-2xl font-bold tracking-tight text-blue-900 dark:text-blue-100 font-headline">Tribe Topper</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors font-label font-medium" href="#">Courses</a>
+<a class="text-blue-700 dark:text-blue-400 border-b-2 border-blue-700 dark:border-blue-400 pb-1 font-label font-medium" href="#">Pricing</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors font-label font-medium" href="#">Resources</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="px-4 py-2 text-primary font-label font-medium hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-all scale-95 duration-200 ease-in-out">Login</button>
+<button class="px-6 py-2 bg-gradient-to-br from-primary to-primary-container text-white rounded-lg font-label font-medium shadow-md hover:opacity-90 transition-all scale-95 duration-200 ease-in-out">Sign Up</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+<!-- Hero Header -->
+<header class="text-center mb-16">
+<h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Invest in your future.</h1>
+<p class="text-lg text-on-surface-variant max-w-2xl mx-auto mb-10">Choose the plan that fits your learning journey. From individual excellence to institutional empowerment.</p>
+<!-- Billing Toggle -->
+<div class="flex items-center justify-center space-x-4">
+<span class="text-on-surface font-medium">Monthly</span>
+<button class="relative w-14 h-8 bg-surface-container-highest rounded-full p-1 transition-colors duration-200">
+<div class="absolute right-1 top-1 w-6 h-6 bg-primary rounded-full shadow-sm"></div>
+</button>
+<span class="text-on-surface font-medium">Annual</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed text-xs font-bold px-2 py-1 rounded-full">SAVE 20%</span>
+</div>
+</header>
+<!-- Pricing Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
+<!-- Basic Plan -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col relative transition-transform hover:-translate-y-1">
+<div class="mb-8">
+<h3 class="text-xl font-bold mb-2">Basic</h3>
+<div class="flex items-baseline mb-4">
+<span class="text-4xl font-extrabold">$19</span>
+<span class="text-on-surface-variant ml-1">/mo</span>
+</div>
+<p class="text-sm text-on-surface-variant">Essential tools for focused independent learners.</p>
+</div>
+<div class="space-y-4 mb-10 flex-grow">
+<div class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="check">check</span>
+<span class="text-sm">Limited Mock Tests (5/mo)</span>
+</div>
+<div class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="check">check</span>
+<span class="text-sm">Basic Progress Reports</span>
+</div>
+<div class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="check">check</span>
+<span class="text-sm">Community Access</span>
+</div>
+</div>
+<button class="w-full py-3 bg-surface-container-high text-primary font-bold rounded-lg hover:bg-surface-container-highest transition-colors">Subscribe Now</button>
+</div>
+<!-- Premium Plan -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col relative border-2 border-primary shadow-xl scale-105 z-10">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider">Most Popular</div>
+<div class="mb-8">
+<h3 class="text-xl font-bold mb-2">Premium</h3>
+<div class="flex items-baseline mb-4">
+<span class="text-4xl font-extrabold">$49</span>
+<span class="text-on-surface-variant ml-1">/mo</span>
+</div>
+<p class="text-sm text-on-surface-variant">The full suite for students aiming for the top tier.</p>
+</div>
+<div class="space-y-4 mb-10 flex-grow">
+<div class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-sm font-semibold">Unlimited Mock Tests</span>
+</div>
+<div class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-sm font-semibold">24/7 Tutor Support</span>
+</div>
+<div class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="check">check</span>
+<span class="text-sm">Advanced AI Insights</span>
+</div>
+<div class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="check">check</span>
+<span class="text-sm">Weekly Performance Calls</span>
+</div>
+</div>
+<button class="w-full py-4 bg-gradient-to-br from-primary to-primary-container text-white font-bold rounded-lg shadow-lg hover:opacity-90 transition-opacity">Subscribe Now</button>
+</div>
+<!-- Institutional Plan -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col relative transition-transform hover:-translate-y-1">
+<div class="mb-8">
+<h3 class="text-xl font-bold mb-2">Institutional</h3>
+<div class="flex items-baseline mb-4">
+<span class="text-4xl font-extrabold">$199</span>
+<span class="text-on-surface-variant ml-1">/mo</span>
+</div>
+<p class="text-sm text-on-surface-variant">Customized solutions for schools and learning centers.</p>
+</div>
+<div class="space-y-4 mb-10 flex-grow">
+<div class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="check">check</span>
+<span class="text-sm">Up to 50 Student Seats</span>
+</div>
+<div class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="check">check</span>
+<span class="text-sm">Admin Dashboard &amp; Analytics</span>
+</div>
+<div class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="check">check</span>
+<span class="text-sm">Dedicated Account Manager</span>
+</div>
+</div>
+<button class="w-full py-3 bg-surface-container-high text-primary font-bold rounded-lg hover:bg-surface-container-highest transition-colors">Subscribe Now</button>
+</div>
+</div>
+<!-- Comparison Table Section -->
+<section class="mb-24 overflow-x-auto">
+<div class="min-w-[800px]">
+<h2 class="text-3xl font-bold mb-10 text-center">Compare detailed features</h2>
+<div class="bg-surface-container-low rounded-2xl p-1">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-lowest">
+<th class="p-6 rounded-tl-xl font-headline font-bold text-on-surface">Features</th>
+<th class="p-6 font-headline font-bold text-center">Basic</th>
+<th class="p-6 font-headline font-bold text-center text-primary">Premium</th>
+<th class="p-6 rounded-tr-xl font-headline font-bold text-center">Institutional</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/10">
+<tr>
+<td class="p-6 font-medium">Unlimited Mock Tests</td>
+<td class="p-6 text-center text-on-surface-variant">5 per month</td>
+<td class="p-6 text-center"><span class="material-symbols-outlined text-secondary" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+<td class="p-6 text-center"><span class="material-symbols-outlined text-on-surface-variant" data-icon="check_circle">check_circle</span></td>
+</tr>
+<tr>
+<td class="p-6 font-medium">24/7 Tutor Support</td>
+<td class="p-6 text-center text-on-surface-variant">—</td>
+<td class="p-6 text-center"><span class="material-symbols-outlined text-secondary" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+<td class="p-6 text-center"><span class="material-symbols-outlined text-on-surface-variant" data-icon="check_circle">check_circle</span></td>
+</tr>
+<tr>
+<td class="p-6 font-medium">Progress Reports</td>
+<td class="p-6 text-center">Standard</td>
+<td class="p-6 text-center text-primary font-bold">Real-time AI</td>
+<td class="p-6 text-center">Batch Analytics</td>
+</tr>
+<tr>
+<td class="p-6 font-medium">Study Materials</td>
+<td class="p-6 text-center"><span class="material-symbols-outlined text-on-surface-variant" data-icon="check_circle">check_circle</span></td>
+<td class="p-6 text-center"><span class="material-symbols-outlined text-secondary" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span></td>
+<td class="p-6 text-center"><span class="material-symbols-outlined text-on-surface-variant" data-icon="check_circle">check_circle</span></td>
+</tr>
+<tr class="bg-surface-container-lowest/50">
+<td class="p-6 font-medium">API Access</td>
+<td class="p-6 text-center">—</td>
+<td class="p-6 text-center">—</td>
+<td class="p-6 text-center"><span class="material-symbols-outlined text-on-surface-variant" data-icon="check_circle">check_circle</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="max-w-4xl mx-auto">
+<h2 class="text-3xl font-bold mb-12 text-center">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<div class="bg-surface-container-low p-6 rounded-xl">
+<button class="flex justify-between items-center w-full text-left font-bold text-lg">
+<span>Can I switch plans mid-billing cycle?</span>
+<span class="material-symbols-outlined" data-icon="expand_more">expand_more</span>
+</button>
+<p class="mt-4 text-on-surface-variant leading-relaxed">Yes, you can upgrade or downgrade your plan at any time. When upgrading, the change is immediate and the difference will be pro-rated. Downgrades take effect at the end of the current billing cycle.</p>
+</div>
+<div class="bg-white p-6 rounded-xl border border-outline-variant/20 shadow-sm">
+<button class="flex justify-between items-center w-full text-left font-bold text-lg">
+<span>How does the 24/7 Tutor Support work?</span>
+<span class="material-symbols-outlined" data-icon="expand_more">expand_more</span>
+</button>
+</div>
+<div class="bg-white p-6 rounded-xl border border-outline-variant/20 shadow-sm">
+<button class="flex justify-between items-center w-full text-left font-bold text-lg">
+<span>Are there any group discounts for students?</span>
+<span class="material-symbols-outlined" data-icon="expand_more">expand_more</span>
+</button>
+</div>
+<div class="bg-white p-6 rounded-xl border border-outline-variant/20 shadow-sm">
+<button class="flex justify-between items-center w-full text-left font-bold text-lg">
+<span>Is there a free trial available?</span>
+<span class="material-symbols-outlined" data-icon="expand_more">expand_more</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 px-8 py-12 max-w-7xl mx-auto">
+<div class="col-span-2 md:col-span-1">
+<div class="text-xl font-bold text-blue-900 dark:text-blue-100 mb-4 font-headline">Tribe Topper</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-body max-w-xs">Empowering students through premium educational technology and expert tutoring.</p>
+</div>
+<div>
+<h4 class="font-bold text-blue-800 dark:text-blue-300 mb-4 font-headline">Quick Links</h4>
+<ul class="space-y-2">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 font-body text-sm underline decoration-blue-500/30 underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">About Us</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 font-body text-sm underline decoration-blue-500/30 underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Curriculum</a></li>
+<li><a class="text-blue-700 dark:text-blue-400 font-semibold font-body text-sm underline decoration-blue-500/30 underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Pricing Plans</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-blue-800 dark:text-blue-300 mb-4 font-headline">Support</h4>
+<ul class="space-y-2">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 font-body text-sm underline decoration-blue-500/30 underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Student Dashboard</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 font-body text-sm underline decoration-blue-500/30 underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Contact Support</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 font-body text-sm underline decoration-blue-500/30 underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-blue-800 dark:text-blue-300 mb-4 font-headline">Social</h4>
+<div class="flex space-x-4">
+<span class="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center material-symbols-outlined text-primary cursor-pointer" data-icon="public">public</span>
+<span class="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center material-symbols-outlined text-primary cursor-pointer" data-icon="mail">mail</span>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 py-6 border-t border-slate-200/50 dark:border-slate-800/50 text-center md:text-left">
+<p class="text-slate-500 dark:text-slate-400 text-xs font-body">© 2024 Tribe Topper. All rights reserved.</p>
+</div>
+</footer>
+</body></html>
